@@ -4,19 +4,16 @@
     --second-font: "Raleway", sans-serif;
     --accent-color: #FFFFFF;
     --main-color: #212121;
+    --first-color: #757575;
     --second-color: #2196F3;
-    --main-font-weight: 400; 
     --main-font-size: 14px;
     --main-line-height: 1.14;
+    --main-letter-spacing: 0.03em;
 }
 
-.body {
+body {
     font-family: "Roboto", sans-serif; 
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.46;
-    letter-spacing:0.03em;
-    color: #757575;
     background: #ffffff;
 }
 
@@ -27,13 +24,12 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        letter-spacing: 0.03em;
+        letter-spacing: var(--main-letter-spacing);
         text-decoration-line: none;
         list-style: none;
-        color: #2196F3;
+        color: var(--second-color);
 }
 .list {
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
@@ -47,9 +43,7 @@
 }
 
 .link-first {
-    font-family: var(--main-font);
-    font-style: medium;
-    font-weight: var(--main-font-weight);
+    font-weight: 500;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
     letter-spacing: 0.02em;
@@ -58,9 +52,7 @@
 }
 
 .link-second {
-    font-family: var(--main-font);
-    font-style: medium;
-    font-weight: var(--main-font-weight);
+    font-weight: 500;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
     letter-spacing: 0.02em;
@@ -68,27 +60,23 @@
     color: var(--main-color);
 }
 .link-mail {
-    font-family: var(--main-font);
-    font-style: medium;
-    font-weight: var(--main-font-weight);
+    font-weight: 500;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #757575;
+    color: var(--first-color);
    }
    .link-mail:hover,
    .link-mail:focus {
        color: var(--second-color);
    }
 .link-tel {
-    font-family: var(--main-font);
-        font-style: medium;
-        font-weight: var(--main-font-weight);
+        font-weight: 500;
         font-size: var(--main-font-size);
         line-height: var(--main-line-height);
         letter-spacing: 0.02em;
-        color: #757575;
+        color: var(--first-color);
         text-decoration: none;
 }
 .link-mail:hover,
@@ -102,17 +90,15 @@
 }
 
 .hero-title {
-    font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-color);
-}
+   }
 
 .hero-button {
-    font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -133,34 +119,33 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+ }
 
+.decision {
+    text-decoration: none;
+    list-style-type: none;
+}
+        
 .advantage {
-    font-family: var(--main-font);
     font-weight: 700;
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     color: var(--main-color);
-    text-decoration-style: none;
-    list-style-type: none;
-}
+   }
 
 .requirement {
-    font-family: var(--main-font);
-    font-weight: var(--main-font-weight);
     font-size: var(--main-font-size);
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     color: #757575;
 }
 
 .our-profile, .team {
-    font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     color: var(--main-color);
 }
 
@@ -169,36 +154,31 @@
 }
 
 .pro {
-    font-family: var(--main-font);
     text-decoration-line: none;
     list-style-image: none;
 }
 
 .name {
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     color: var(--main-color);
 }
 .profession {
-    font-family: var(--main-font);
-    font-weight: var(--main-font-weight);
     font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: #757575;
+    line-height: 1.19;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--first-color);
 }
 
  /*main-portfolio*/
 .progect-button-first, .progect-button-second {
     font-family: var(--main-font);
-    font-style: medium;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     cursor: pointer;
     text-decoration-line: none;
     list-style: none;
@@ -212,7 +192,8 @@
 }
 .progect-button-first:hover,
 .progect-button-first:focus {
-    color:#757575;
+    color: var(--first-color);
+    font-family: var(--main-font);
   }
 
 .progect-button-second {
@@ -221,11 +202,10 @@
   }
 .progect-button-second:hover,
 .progect-button-second:focus {
-    color: #757575;
+    color: var(--first-color);
 }
 
 .example {
-    font-family: var(--main-font);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -234,18 +214,17 @@
 }  
 
 .direction  {
-    font-family: var(--main-font);
     font-weight: var(--main-font-weight);
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #757575;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--first-color);
 }
 
 /*footer*/
 .footer {
     background: #2F303A;
-}
+ }
 
 .logo-footer {
     color: var(--accent-color);
@@ -257,9 +236,7 @@
     font-style: normal;
     font-size: var(--main-font-size);
     line-height: 1.46;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-letter-spacing);
     color: var(--accent-color);
-    text-decoration: none;
-    list-style: none;
-    Fill: Solid rgba(255, 255, 255, 0.6)
-   }
+    color: rgba(255, 255, 255, 0.6);
+}
