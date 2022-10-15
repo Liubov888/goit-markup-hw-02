@@ -99,6 +99,7 @@ body {
    }
 
 .hero-button {
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -235,8 +236,14 @@ body {
     font-weight: var(--main-font-weight);
     font-style: normal;
     font-size: var(--main-font-size);
-    line-height: 1.46;
+    line-height: 1.71;
+    text-decoration-line: none;
+    list-style: none;
     letter-spacing: var(--main-letter-spacing);
     color: var(--accent-color);
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress {
+    color: var(--accent-color)
 }
