@@ -217,7 +217,7 @@ body {
 .direction  {
     font-weight: var(--main-font-weight);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.86;
     letter-spacing: var(--main-letter-spacing);
     color: var(--first-color);
 }
